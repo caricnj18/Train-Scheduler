@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Train Schedule</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- Firebase JavaScript Link -->
+  <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
+
+</head>
+
+
+<body>
+  <div class="container">
+    <header>
+      <!--title for page-->
+      <div class="jumbotron" style="background-color: rgb(82, 128, 170); color: white">
+        <h1 class="text-center">Anytime is Train Time</h1>
+        <h3 class="text-center">Choo Choo. Chee Chee</h3>
+      </div>
+
+    </header>
+
+    <!--current employee table-->
+    <div class="panel panel-primary">
+      <div class="panel-heading">Current Train Schedule</div>
+
+      <!-- Table -->
+      <table class="table">
+        <!--the heading-->
+        <thead>
+          <!--the row-->
+          <tr>
+            <th id="tName">
+              <strong>Train Name</strong>
+            </th>
+            <th id="tStop">
+              <strong>Destination</strong>
+            </th>
+            <th id="tFreq">
+              <strong>Frequency (min)</strong>
+            </th>
+            <th id="tNext">
+              <strong>Next Arrival</strong>
+            </th>
+            <th id="tMinutes">
+              <strong>Minutes Away</strong>
+          </tr>
+        </thead>
+        <!--body-->
+        <tbody>
+
+          <tr class="rowOne">
+            <td>Trenton Express</td>
+            <td>Trenton</td>
+            <td>25</td>
+            <td>05:35PM</td>
+            <td>10</td>
+          </tr>
+
+          <tr class="rowTwo">
+            <td> Oregon Trail </td>
+            <td> Salem, Oregon</td>
+            <td>3600</td>
+            <td>01:39PM</td>
+            <td>1154 </td>
+          </tr>
+
+          <tr class="rowThree">
+            <td> Midnight Carriage</td>
+            <td> Philadelphia</td>
+            <td>15</td>
+            <td> 05:35PM</td>
+            <td> 10</td>
+          </tr>
+
+          <tr class="rowFour">
+            <td> Sing Sing Caravan</td>
+            <td> Atlanta</td>
+            <td>45 </td>
+            <td> 05:53PM</td>
+            <td>28</td>
+          </tr>
+
+          <tr class="rowFive">
+            <td> Boston Bus </td>
+            <td> Boston </td>
+            <td>65</td>
+            <td> 05:80PM</td>
+            <td> 25</td>
+          </tr>
+
+          <tr class="rowSix">
+            <td> California Caravan</td>
+            <td> San Francisco</td>
+            <td> 6000</td>
+            <td> 01:25AM</td>
+            <td>4740</td>
+          </tr>
+
+          <tr class="rowSeven">
+            <td>Analben's Train</td>
+            <td>Florida</td>
+            <td> 25</td>
+            <td>05:28PM </td>
+            <td>3</td>
+          </tr>
+
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Add Train -->
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <div class="panel panel-primary">
+        <!--title-->
+        <div class="panel-heading">
+          <h3 class="panel-title">Add Train</h3>
+        </div>
+<!--form body-->
+        <div class="panel-body">
+          <form>
+            <div class="form-group">
+              <label for="addName">Train name</label>
+              <input class="form-control" id="addName" type="text">
+            </div>
+            <div class="form-group">
+              <label for="addStop">Destination</label>
+              <input class="form-control" id="addStop" type="text">
+            </div>
+            <div class="form-group">
+              <label for="addFirst">First Train Time (HHmm-miltary time)</label>
+              <input class="form-control" id="addFirst" type="number">
+            </div>
+            <div class="form-group">
+              <label for="addFreq">Frequency (min)</label>
+              <input class="form-control" id="addFreq" type="number">
+            </div>
+            <button class="btn btn-primary" id="submitTrain" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+
+
+
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Script -->
+  <script src="assets/javascript/app.js"></script>
+</body>
+
+</html>

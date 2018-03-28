@@ -1,0 +1,14 @@
+/*style sheet for wk 06*/
+
+* {
+    box-sizing: border-box;
+}
+
+header{
+text-align: center;
+}
+
+/*the entire page*/
+.table-bordered{
+    
+}
