@@ -10,6 +10,9 @@
   <!-- Firebase JavaScript Link -->
   <script src="https://www.gstatic.com/firebasejs/4.12.0/firebase.js"></script>
 
+ <!-- Moment.js Reference -->
+ <script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+   
 </head>
 
 
@@ -29,7 +32,7 @@
       <div class="panel-heading">Current Train Schedule</div>
 
       <!-- Table -->
-      <table class="table">
+      <table class="table table-hover" id='trainTable'>
         <!--the heading-->
         <thead>
           <!--the row-->
@@ -52,62 +55,6 @@
         </thead>
         <!--body-->
         <tbody>
-
-          <tr class="rowOne">
-            <td>Trenton Express</td>
-            <td>Trenton</td>
-            <td>25</td>
-            <td>05:35PM</td>
-            <td>10</td>
-          </tr>
-
-          <tr class="rowTwo">
-            <td> Oregon Trail </td>
-            <td> Salem, Oregon</td>
-            <td>3600</td>
-            <td>01:39PM</td>
-            <td>1154 </td>
-          </tr>
-
-          <tr class="rowThree">
-            <td> Midnight Carriage</td>
-            <td> Philadelphia</td>
-            <td>15</td>
-            <td> 05:35PM</td>
-            <td> 10</td>
-          </tr>
-
-          <tr class="rowFour">
-            <td> Sing Sing Caravan</td>
-            <td> Atlanta</td>
-            <td>45 </td>
-            <td> 05:53PM</td>
-            <td>28</td>
-          </tr>
-
-          <tr class="rowFive">
-            <td> Boston Bus </td>
-            <td> Boston </td>
-            <td>65</td>
-            <td> 05:80PM</td>
-            <td> 25</td>
-          </tr>
-
-          <tr class="rowSix">
-            <td> California Caravan</td>
-            <td> San Francisco</td>
-            <td> 6000</td>
-            <td> 01:25AM</td>
-            <td>4740</td>
-          </tr>
-
-          <tr class="rowSeven">
-            <td>Analben's Train</td>
-            <td>Florida</td>
-            <td> 25</td>
-            <td>05:28PM </td>
-            <td>3</td>
-          </tr>
 
         </tbody>
       </table>
@@ -153,6 +100,8 @@
 
   <!-- jQuery -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+
 
   <!-- Script -->
   <script src="assets/javascript/app.js"></script>
